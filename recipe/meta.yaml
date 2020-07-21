@@ -1,4 +1,4 @@
-{% set version = '0.1.6' %}
+{% set version = "0.1.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggquickeda_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggquickeda/ggquickeda_{{ version }}.tar.gz
-  sha256: 4df8702e44b7c2406814adecf9c5b0795bbb5d7e3254fcca95506f78a87b41fa
+  sha256: 513887ea32a6605017f3c21489766598e40e898106164d95be7139d952c3fdef
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -88,12 +88,10 @@ test:
 about:
   home: https://github.com/smouksassi/ggquickeda
   license: MIT
-  summary: Quickly and easily perform exploratory data analysis by uploading your data as a 'csv'
-    file. Start generating insights using 'ggplot2' plots and 'table1' tables with descriptive
-    stats, all using an easy-to-use point and click 'Shiny' interface.
+  summary: Quickly and easily perform exploratory data analysis by uploading your data as a 'csv' file. Start generating insights using 'ggplot2' plots and 'table1' tables with descriptive stats, all using an easy-to-use point and click 'Shiny' interface.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
