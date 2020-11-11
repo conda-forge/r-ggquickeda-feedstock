@@ -29,9 +29,10 @@ requirements:
     - r-formula
     - r-ggally
     - r-hmisc
+    - r-rpostgres
     - r-colourpicker
     - r-dplyr
-    - r-ggplot2
+    - r-ggplot2 >=3.3.2
     - r-ggpmisc
     - r-ggpubr
     - r-ggrepel >=0.7.0
@@ -44,6 +45,7 @@ requirements:
     - r-rlang
     - r-scales
     - r-shiny >=1.0.4
+    - r-shinyfiles
     - r-shinyjqui
     - r-shinyjs >=1.1
     - r-stringr
@@ -57,9 +59,10 @@ requirements:
     - r-formula
     - r-ggally
     - r-hmisc
+    - r-rpostgres
     - r-colourpicker
     - r-dplyr
-    - r-ggplot2
+    - r-ggplot2 >=3.3.2
     - r-ggpmisc
     - r-ggpubr
     - r-ggrepel >=0.7.0
@@ -72,6 +75,7 @@ requirements:
     - r-rlang
     - r-scales
     - r-shiny >=1.0.4
+    - r-shinyfiles
     - r-shinyjqui
     - r-shinyjs >=1.1
     - r-stringr
