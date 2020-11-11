@@ -1,4 +1,4 @@
-{% set version = "0.1.7" %}
+{% set version = "0.1.8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggquickeda_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggquickeda/ggquickeda_{{ version }}.tar.gz
-  sha256: 513887ea32a6605017f3c21489766598e40e898106164d95be7139d952c3fdef
+  sha256: 3d533261a57dd9214c57eae2a57f73c7e58aa276134e8cfee6484bd99acd37b7
 
 build:
   merge_build_host: true  # [win]
@@ -29,9 +29,10 @@ requirements:
     - r-formula
     - r-ggally
     - r-hmisc
+    - r-rpostgres
     - r-colourpicker
     - r-dplyr
-    - r-ggplot2
+    - r-ggplot2 >=3.3.2
     - r-ggpmisc
     - r-ggpubr
     - r-ggrepel >=0.7.0
@@ -44,6 +45,7 @@ requirements:
     - r-rlang
     - r-scales
     - r-shiny >=1.0.4
+    - r-shinyfiles
     - r-shinyjqui
     - r-shinyjs >=1.1
     - r-stringr
@@ -57,9 +59,10 @@ requirements:
     - r-formula
     - r-ggally
     - r-hmisc
+    - r-rpostgres
     - r-colourpicker
     - r-dplyr
-    - r-ggplot2
+    - r-ggplot2 >=3.3.2
     - r-ggpmisc
     - r-ggpubr
     - r-ggrepel >=0.7.0
@@ -72,6 +75,7 @@ requirements:
     - r-rlang
     - r-scales
     - r-shiny >=1.0.4
+    - r-shinyfiles
     - r-shinyjqui
     - r-shinyjs >=1.1
     - r-stringr
