@@ -1,4 +1,4 @@
-{% set version = "0.1.9" %}
+{% set version = "0.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggquickeda_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggquickeda/ggquickeda_{{ version }}.tar.gz
-  sha256: 0a8ceb4be78365f7b152ee76bd5c32e49f32c5f95635fb21c93eafda7dac2dfd
+  sha256: b184303e932c4b768e3e38291ad21aaa65e7eaef5ca6afae319ae9474ad37789
 
 build:
   merge_build_host: true  # [win]
@@ -27,18 +27,18 @@ requirements:
     - r-base
     - r-dt
     - r-formula
-    - r-ggally
+    - r-ggally >=2.1.0
     - r-hmisc
     - r-rpostgres
     - r-colourpicker
     - r-dplyr
+    - r-ggbeeswarm
     - r-ggplot2 >=3.3.2
     - r-ggpmisc
     - r-ggpubr
     - r-ggrepel >=0.7.0
     - r-ggstance
     - r-gridextra
-    - r-lazyeval
     - r-markdown
     - r-plotly
     - r-quantreg
@@ -51,24 +51,25 @@ requirements:
     - r-stringr
     - r-survival
     - r-survminer
-    - r-table1 >=1.1
+    - r-table1 >=1.2
     - r-tidyr
+    - r-zoo
   run:
     - r-base
     - r-dt
     - r-formula
-    - r-ggally
+    - r-ggally >=2.1.0
     - r-hmisc
     - r-rpostgres
     - r-colourpicker
     - r-dplyr
+    - r-ggbeeswarm
     - r-ggplot2 >=3.3.2
     - r-ggpmisc
     - r-ggpubr
     - r-ggrepel >=0.7.0
     - r-ggstance
     - r-gridextra
-    - r-lazyeval
     - r-markdown
     - r-plotly
     - r-quantreg
@@ -81,8 +82,9 @@ requirements:
     - r-stringr
     - r-survival
     - r-survminer
-    - r-table1 >=1.1
+    - r-table1 >=1.2
     - r-tidyr
+    - r-zoo
 
 test:
   commands:
