@@ -27,18 +27,18 @@ requirements:
     - r-base
     - r-dt
     - r-formula
-    - r-ggally
+    - r-ggally >=2.1.0
     - r-hmisc
     - r-rpostgres
     - r-colourpicker
     - r-dplyr
+    - r-ggbeeswarm
     - r-ggplot2 >=3.3.2
     - r-ggpmisc
     - r-ggpubr
     - r-ggrepel >=0.7.0
     - r-ggstance
     - r-gridextra
-    - r-lazyeval
     - r-markdown
     - r-plotly
     - r-quantreg
@@ -51,24 +51,25 @@ requirements:
     - r-stringr
     - r-survival
     - r-survminer
-    - r-table1 >=1.1
+    - r-table1 >=1.2
     - r-tidyr
-  run:
+    - r-zoo
+ run:
     - r-base
     - r-dt
     - r-formula
-    - r-ggally
+    - r-ggally >=2.1.0
     - r-hmisc
     - r-rpostgres
     - r-colourpicker
     - r-dplyr
+    - r-ggbeeswarm
     - r-ggplot2 >=3.3.2
     - r-ggpmisc
     - r-ggpubr
     - r-ggrepel >=0.7.0
     - r-ggstance
     - r-gridextra
-    - r-lazyeval
     - r-markdown
     - r-plotly
     - r-quantreg
@@ -81,8 +82,9 @@ requirements:
     - r-stringr
     - r-survival
     - r-survminer
-    - r-table1 >=1.1
+    - r-table1 >=1.2
     - r-tidyr
+    - r-zoo
 
 test:
   commands:
