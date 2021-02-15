@@ -54,7 +54,7 @@ requirements:
     - r-table1 >=1.2
     - r-tidyr
     - r-zoo
- run:
+  run:
     - r-base
     - r-dt
     - r-formula
