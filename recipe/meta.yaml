@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggquickeda_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggquickeda/ggquickeda_{{ version }}.tar.gz
-  sha256: b184303e932c4b768e3e38291ad21aaa65e7eaef5ca6afae319ae9474ad37789
+  sha256: 7b3335be78e6c47cbf304983e7f77c96440312c9933436c279141845f90914fb
 
 build:
   merge_build_host: true  # [win]
