@@ -1,11 +1,11 @@
-About r-ggquickeda
-==================
+About r-ggquickeda-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggquickeda-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/smouksassi/ggquickeda
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggquickeda-feedstock/blob/main/LICENSE.txt)
 
 Summary: Quickly and easily perform exploratory data analysis by uploading your data as a 'csv' file. Start generating insights using 'ggplot2' plots and 'table1' tables with descriptive stats, all using an easy-to-use point and click 'Shiny' interface.
 
