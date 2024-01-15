@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggquickeda_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggquickeda/ggquickeda_{{ version }}.tar.gz
-  sha256: bd5e7b8cc81a485a7e186a6d2cc0fffeecd34ad3c438728762143fedaaf31a4f
+  sha256: 56fdfcb05eed8a7aeb198b2de6f0a8fe3aa19145405620969d0a101c8ac3a402
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -23,6 +23,7 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-dt
@@ -31,18 +32,25 @@ requirements:
     - r-hmisc
     - r-rpostgres
     - r-colourpicker
+    - r-data.table
     - r-dplyr
+    - r-forcats
     - r-ggbeeswarm
-    - r-ggplot2 >=3.3.2
+    - r-ggh4x
+    - r-ggplot2 >=3.4.0
     - r-ggpmisc
     - r-ggpubr
     - r-ggrepel >=0.7.0
+    - r-ggridges
     - r-ggstance
+    - r-glue
     - r-gridextra
     - r-markdown
+    - r-patchwork >=1.2.0
     - r-plotly
     - r-quantreg
     - r-rlang
+    - r-rms
     - r-scales
     - r-shiny >=1.0.4
     - r-shinyfiles
@@ -51,7 +59,8 @@ requirements:
     - r-stringr
     - r-survival
     - r-survminer
-    - r-table1 >=1.2
+    - r-table1 >=1.4.2
+    - r-tibble
     - r-tidyr
     - r-zoo
   run:
@@ -62,18 +71,25 @@ requirements:
     - r-hmisc
     - r-rpostgres
     - r-colourpicker
+    - r-data.table
     - r-dplyr
+    - r-forcats
     - r-ggbeeswarm
-    - r-ggplot2 >=3.3.2
+    - r-ggh4x
+    - r-ggplot2 >=3.4.0
     - r-ggpmisc
     - r-ggpubr
     - r-ggrepel >=0.7.0
+    - r-ggridges
     - r-ggstance
+    - r-glue
     - r-gridextra
     - r-markdown
+    - r-patchwork >=1.2.0
     - r-plotly
     - r-quantreg
     - r-rlang
+    - r-rms
     - r-scales
     - r-shiny >=1.0.4
     - r-shinyfiles
@@ -82,7 +98,8 @@ requirements:
     - r-stringr
     - r-survival
     - r-survminer
-    - r-table1 >=1.2
+    - r-table1 >=1.4.2
+    - r-tibble
     - r-tidyr
     - r-zoo
 
