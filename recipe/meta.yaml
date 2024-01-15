@@ -23,6 +23,7 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-dt
@@ -31,18 +32,25 @@ requirements:
     - r-hmisc
     - r-rpostgres
     - r-colourpicker
+    - r-data.table
     - r-dplyr
+    - r-forcats
     - r-ggbeeswarm
-    - r-ggplot2 >=3.3.2
+    - r-ggh4x
+    - r-ggplot2 >=3.4.0
     - r-ggpmisc
     - r-ggpubr
     - r-ggrepel >=0.7.0
+    - r-ggridges
     - r-ggstance
+    - r-glue
     - r-gridextra
     - r-markdown
+    - r-patchwork >=1.2.0
     - r-plotly
     - r-quantreg
     - r-rlang
+    - r-rms
     - r-scales
     - r-shiny >=1.0.4
     - r-shinyfiles
@@ -51,7 +59,8 @@ requirements:
     - r-stringr
     - r-survival
     - r-survminer
-    - r-table1 >=1.2
+    - r-table1 >=1.4.2
+    - r-tibble
     - r-tidyr
     - r-zoo
   run:
@@ -62,18 +71,25 @@ requirements:
     - r-hmisc
     - r-rpostgres
     - r-colourpicker
+    - r-data.table
     - r-dplyr
+    - r-forcats
     - r-ggbeeswarm
-    - r-ggplot2 >=3.3.2
+    - r-ggh4x
+    - r-ggplot2 >=3.4.0
     - r-ggpmisc
     - r-ggpubr
     - r-ggrepel >=0.7.0
+    - r-ggridges
     - r-ggstance
+    - r-glue
     - r-gridextra
     - r-markdown
+    - r-patchwork >=1.2.0
     - r-plotly
     - r-quantreg
     - r-rlang
+    - r-rms
     - r-scales
     - r-shiny >=1.0.4
     - r-shinyfiles
@@ -82,7 +98,8 @@ requirements:
     - r-stringr
     - r-survival
     - r-survminer
-    - r-table1 >=1.2
+    - r-table1 >=1.4.2
+    - r-tibble
     - r-tidyr
     - r-zoo
 
