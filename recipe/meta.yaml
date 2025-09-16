@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggquickeda_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggquickeda/ggquickeda_{{ version }}.tar.gz
-  sha256: 56fdfcb05eed8a7aeb198b2de6f0a8fe3aa19145405620969d0a101c8ac3a402
+  sha256: 8548bd04c2bbf18451ff984261e9e7e0d5ae1095d5c05e3cb2dc7de4c673460c
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
